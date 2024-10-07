@@ -8,6 +8,7 @@ This project demonstrates the implementation of **CQRS (Command Query Responsibi
 - **MediatR**
 - **Entity Framework Core**
 - **CQRS Pattern**
+- **Caching Behavior with MediatR**
 
 ## Features
 
