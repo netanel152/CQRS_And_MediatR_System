@@ -11,16 +11,10 @@ namespace CQRS_And_MediatR_System.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class ProductsController : ControllerBase
+public class ProductsController(ISender mediatorSender, IMediator mediatorPublish) : ControllerBase
 {
-    private readonly ISender _mediatorSender;
-    private readonly IMediator _mediatorPublish;
-
-    public ProductsController(ISender mediatorSender,IMediator mediatorPublish)
-    {
-        _mediatorSender = mediatorSender;
-        _mediatorPublish = mediatorPublish;
-    }
+    private readonly ISender _mediatorSender = mediatorSender;
+    private readonly IMediator _mediatorPublish = mediatorPublish;
 
     [HttpGet("{id:guid}")]
     public async Task<IActionResult> GetProduct(Guid id)
