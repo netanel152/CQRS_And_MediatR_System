@@ -1,7 +1,3 @@
-Sure! Here’s a simple yet comprehensive `README.md` template for your CQRS and MediatR project in ASP.NET Core, inspired by the blog you shared. You can customize it according to your project’s specifics.
-
----
-
 # CQRS and MediatR in ASP.NET Core
 
 This project demonstrates the implementation of **CQRS (Command Query Responsibility Segregation)** and **MediatR** pattern in an ASP.NET Core Web API application. It uses **MediatR** to handle commands and queries, separating the read and write operations for better scalability and maintainability.
