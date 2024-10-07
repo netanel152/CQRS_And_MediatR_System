@@ -33,8 +33,8 @@ To run this project locally, you need the following:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/netanel152/CQRS_And_MediatR_System.git
+   cd CQRS_And_MediatR_System
    ```
 
 2. **Restore NuGet Packages:**
