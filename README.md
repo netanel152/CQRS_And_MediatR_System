@@ -1,10 +1,10 @@
 # CQRS and MediatR in ASP.NET Core
 
-This project demonstrates the implementation of **CQRS (Command Query Responsibility Segregation)** and **MediatR** pattern in an ASP.NET Core Web API application. It uses **MediatR** to handle commands and queries, separating the read and write operations for better scalability and maintainability.
+This project demonstrates the implementation of **CQRS (Command Query Responsibility Segregation)** and **MediatR** patterns in an ASP.NET Core Web API application. It uses **MediatR** to handle commands and queries, separating the read and write operations for better scalability and maintainability.
 
 ## Technologies Used
 
-- **.NET Core 6/7** (adjust according to your version)
+- **.NET Core 8**
 - **MediatR**
 - **Entity Framework Core**
 - **CQRS Pattern**
@@ -12,7 +12,7 @@ This project demonstrates the implementation of **CQRS (Command Query Responsibi
 
 ## Features
 
-- Separation of commands (for write operations) and queries (for read operations) using the CQRS pattern.
+- Separating commands (for write operations) and queries (for read operations) using the CQRS pattern.
 - Implementation of MediatR for better separation of concerns.
 - Sample CRUD operations (Create, Read, Update, Delete) using commands and queries.
 - Proper usage of records for immutability in commands and queries.
@@ -122,12 +122,12 @@ The project follows a **clean architecture** and **CQRS** pattern. Below is a br
 - **Queries**: These handle the **read operations** (fetching data) and follow the CQRS pattern by separating the logic from the write operations.
   - Example: `GetProductQuery`, `ListProductsQuery`, etc.
 
-- **Handlers**: The logic for each command or query is handled by **MediatR Handlers**. These are classes that inherit from `IRequestHandler` and contain the logic to process the request.
+- **Handlers**: The logic for each command or query is handled by **MediatR Handlers**. These classes inherit from `IRequestHandler` and contain the logic to process the request.
   - Example: `CreateProductCommandHandler`, `GetProductQueryHandler`, etc.
 
 ## CQRS and MediatR in Action
 
 - **Commands**: For every write operation (such as creating or updating a product), a command is sent via `MediatR`, and the corresponding handler takes action.
-- **Queries**: For read operations, a query is sent via `MediatR`, and the appropriate handler retrieves the required data.
+- **Queries**: A query is sent via `MediatR` for read operations, and the appropriate handler retrieves the required data.
   
 This separation ensures that the application remains scalable and maintainable, especially as it grows larger.
