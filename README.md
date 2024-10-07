@@ -8,7 +8,6 @@ This project demonstrates the implementation of **CQRS (Command Query Responsibi
 - **MediatR**
 - **Entity Framework Core**
 - **CQRS Pattern**
-- **SQL Server (or any DB provider you choose)**
 
 ## Features
 
@@ -45,25 +44,7 @@ To run this project locally, you need the following:
    dotnet restore
    ```
 
-3. **Update Connection String:**
-
-   Open `appsettings.json` and configure your database connection string.
-
-   ```json
-   "ConnectionStrings": {
-     "DefaultConnection": "Server=your-server;Database=your-database;User Id=your-username;Password=your-password;"
-   }
-   ```
-
-4. **Apply Migrations:**
-
-   Ensure that your database is set up correctly by applying migrations:
-
-   ```bash
-   dotnet ef database update
-   ```
-
-5. **Run the Application:**
+3. **Run the Application:**
 
    Start the application using the following command:
 
@@ -71,7 +52,7 @@ To run this project locally, you need the following:
    dotnet run
    ```
 
-6. **Access the API:**
+4. **Access the API:**
 
    The API will be available at `https://localhost:5001` (or the port configured in `launchSettings.json`).
 
