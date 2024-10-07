@@ -54,7 +54,7 @@ To run this project locally, you need the following:
 
 4. **Access the API:**
 
-   The API will be available at `https://localhost:5001` (or the port configured in `launchSettings.json`).
+   The API will be available at `https://localhost:7283` (or the port configured in `launchSettings.json`).
 
 ## Endpoints
 
